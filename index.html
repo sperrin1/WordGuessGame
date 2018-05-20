@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- reset.css-->
     <!-- style.css -->
+
     <title>Hangman!</title>
 </head>
 
@@ -18,34 +19,34 @@
 <!-- come up with a theme perhaps, or at least dress it up -->
 
     <script>
-        //words to guess
-        var words = [
-            "staircase",
-            "secular",
-            "circulation",
-            "opinion",
-            "torture",
-            "stomach",
-            "beautiful",
-            "displace",
-            "specimen",
-            "function"
-        ];
+        // //words to guess
+        // var words = [
+        //     "staircase",
+        //     "secular",
+        //     "circulation",
+        //     "opinion",
+        //     "torture",
+        //     "stomach",
+        //     "beautiful",
+        //     "displace",
+        //     "specimen",
+        //     "function"
+        // ];
 
-        // Pick a random word
-        var word = words[Math.floor(Math.random() * words.length)];
-        console.log("the random word is ", word);
+        // // Pick a random word
+        // var word = words[Math.floor(Math.random() * words.length)];
+        // console.log("the random word is ", word);
         
-        // Set up the answer array
-        var answerArray = [];
-        for (var i = 0; i < word.length; i++) {
-            answerArray[i] = "_ ";  
-        }
+        // // Set up the answer array
+        // var answerArray = [];
+        // for (var i = 0; i < word.length; i++) {
+        //     answerArray[i] = "_ ";  
+        // }
 
-        document.write(answerArray);
-        console.log("answer array", answerArray);
+        // document.write(answerArray);
+        // console.log("answer array", answerArray);
 
-        var remainingLetters = word.length;
+        // var remainingLetters = word.length;
 
         // array for guessed letters
         // on.keyup guessedletters.append
@@ -67,7 +68,7 @@
 
 
 
-
+<script src="assets/javascript/game.js"></script>
 
 </body>
 

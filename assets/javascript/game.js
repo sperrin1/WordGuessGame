@@ -1,4 +1,4 @@
-    //words to guess
+//words to guess
 var words = [
     "staircase",
     "secular",
@@ -10,39 +10,44 @@ var words = [
     "displace",
     "specimen",
     "function"
-   ];
-   
-   //randonmly picks a word from the list
+];
+
+// Picks a random word
 var word = words[Math.floor(Math.random() * words.length)];
-   
-   // creates "blank" spaces matching the word length
+console.log("the random word is ", word);
+
+// Set up the answer array
 var answerArray = [];
 for (var i = 0; i < word.length; i++) {
- answerArray[i] = "_";
+    answerArray[i] = "_ ";
 }
+
+document.write(answerArray);
+console.log("answer array", answerArray);
+
 var remainingLetters = word.length;
 
 
-    while (remainingLetters > 0) {
-        // Show the player their progress
-        alert(answerArray.join(" "));
-        // Get a guess from the player
-        if (guess === null) {
-            // Exit the game loop
-            break;
-        } else if (guess.length !== 1) {
-            alert("Please enter a single letter.");
-        } else {
-            // Update the game state with the guess
-            for (var j = 0; j < word.length; j++) {
-                if (word[j] === guess) {
-                    answerArray[j] = guess;
-                    remainingLetters--;
-                }
-            }
-        }
-        // The end of the game loop
-    }
+// while (remainingLetters > 0) {
+//     // Show the player their progress
+//     alert(answerArray.join(" "));
+//     // Get a guess from the player
+//     if (guess === null) {
+//         // Exit the game loop
+//         break;
+//     } else if (guess.length !== 1) {
+//         alert("Please enter a single letter.");
+//     } else {
+//         // Update the game state with the guess
+//         for (var j = 0; j < word.length; j++) {
+//             if (word[j] === guess) {
+//                 answerArray[j] = guess;
+//                 remainingLetters--;
+//             }
+//         }
+//     }
+//     // The end of the game loop
+// }
 
-alert(answerArray.join(" "));
-alert("Good job! The answer was " + word);
+// alert(answerArray.join(" "));
+// alert("Good job! The answer was " + word);
