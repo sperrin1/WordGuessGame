@@ -12,12 +12,27 @@ var words = [
     "parsley",
     "function"
 ];
+// var word;
+
+// function startGame() {
+//     // Picks a random word
+//     var word = words[Math.floor(Math.random() * words.length)];
+//     console.log("the random word is ", word);
+//     allowedGuesses = 13;
+//     wrongGuesses = [];
+//     var answerArray = [];
+
+// }
+
+// for (var i = 0; i < word.length; i++) {
+//     answerArray[i] = "_ ";
+// }
 
 // Picks a random word
 var word = words[Math.floor(Math.random() * words.length)];
 console.log("the random word is ", word);
 
-// Set up the answer array
+//Set up the answer array
 var answerArray = [];
 for (var i = 0; i < word.length; i++) {
     answerArray[i] = "_ ";
@@ -30,14 +45,16 @@ console.log("answer array", answerArray);
 document.onkeyup = function (event) {
     var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
     console.log("guess", letterGuessed)
-//    updateGuesses(letterGuessed);
-//    checkWin();
-  };
+    //    updateGuesses(letterGuessed);
+    //    checkWin();
 
+};
+
+// document.write(letterGuessed);
 
 //var guesses = [] --> stored guess --> on keyup add key to array with .push
 // Set up the guesses array
-// var guessesArray = [];
+var guessesArray = [];
 // guessesArray.push(guess)
 
 // document.write(guessesArray);
