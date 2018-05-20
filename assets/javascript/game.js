@@ -12,21 +12,7 @@ var words = [
     "parsley",
     "function"
 ];
-// var word;
 
-// function startGame() {
-//     // Picks a random word
-//     var word = words[Math.floor(Math.random() * words.length)];
-//     console.log("the random word is ", word);
-//     allowedGuesses = 13;
-//     wrongGuesses = [];
-//     var answerArray = [];
-
-// }
-
-// for (var i = 0; i < word.length; i++) {
-//     answerArray[i] = "_ ";
-// }
 
 // Picks a random word
 var word = words[Math.floor(Math.random() * words.length)];
@@ -47,15 +33,15 @@ document.onkeyup = function (event) {
     console.log("guess", letterGuessed)
     //    updateGuesses(letterGuessed);
     //    checkWin();
-
 };
 
-// document.write(letterGuessed);
+// document.write(letterGuessed); --> replaces the entire page here :(
 
 //var guesses = [] --> stored guess --> on keyup add key to array with .push
 // Set up the guesses array
 var guessesArray = [];
-// guessesArray.push(guess)
+//guessesArray.push(letterGuessed);
+// letterGuessed is undefined here fuck why can't I make this work
 
 // document.write(guessesArray);
 // console.log("guesses array", guessesArray);

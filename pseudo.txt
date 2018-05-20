@@ -1,0 +1,12 @@
+
+guess
+key is pressed
+capture key to variable
+update number of guesses remaining --
+update letters guessed array
+if guess matches a letter(s) in word replace '_' with letter(s)
+	update the letter remaining count
+	check if remaining letter count is == 0
+	if yes go to you won function
+check if remaining guesses is ==-1 if it is go to you lose
+
