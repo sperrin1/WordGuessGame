@@ -9,6 +9,7 @@ var words = [
     "beautiful",
     "displace",
     "specimen",
+    "parsley",
     "function"
 ];
 
@@ -25,9 +26,23 @@ for (var i = 0; i < word.length; i++) {
 document.write(answerArray);
 console.log("answer array", answerArray);
 
-//var something on.keyup --> new guess
+//var guess something on.keyup --> new guess
+document.onkeyup = function (event) {
+    var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
+    console.log("guess", letterGuessed)
+//    updateGuesses(letterGuessed);
+//    checkWin();
+  };
 
-//var guesses --> stored guess
+
+//var guesses = [] --> stored guess --> on keyup add key to array with .push
+// Set up the guesses array
+// var guessesArray = [];
+// guessesArray.push(guess)
+
+// document.write(guessesArray);
+// console.log("guesses array", guessesArray);
+
 
 var remainingLetters = word.length;
 document.write(remainingLetters);
