@@ -25,7 +25,13 @@ for (var i = 0; i < word.length; i++) {
 document.write(answerArray);
 console.log("answer array", answerArray);
 
+//var something on.keyup --> new guess
+
+//var guesses --> stored guess
+
 var remainingLetters = word.length;
+document.write(remainingLetters);
+
 
 
 // while (remainingLetters > 0) {
