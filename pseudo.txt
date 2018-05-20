@@ -1,12 +1,22 @@
+create word list
+
+generate random word from word list
+print to page '_' for each letter in word
+"word is 'x' letters in length"
 
 guess
 key is pressed
 capture key to variable
-update number of guesses remaining --
-update letters guessed array
+update number of guesses remaining -- update value on page
+update letters guessed array, update array on page
 if guess matches a letter(s) in word replace '_' with letter(s)
 	update the letter remaining count
-	check if remaining letter count is == 0
+	check if remaining letter count is == 0 and remaining guesses is > -1
 	if yes go to you won function
 check if remaining guesses is ==-1 if it is go to you lose
+
+
+track wins and losses
+
+restart game without killing the win/loss tallies
 
