@@ -42,6 +42,7 @@ document.onkeyup = function (event) {
 var guessesArray = [];
 //guessesArray.push(letterGuessed);
 // letterGuessed is undefined here fuck why can't I make this work
+// set this aside and work on the html/css for awhile
 
 // document.write(guessesArray);
 // console.log("guesses array", guessesArray);
