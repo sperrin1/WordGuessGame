@@ -18,14 +18,14 @@ var words = [
 var word = words[Math.floor(Math.random() * words.length)];
 console.log("the random word is ", word);
 
-//Set up the answer array
+//Set up the answer array --> need this to go in #main-right
 var answerArray = [];
 for (var i = 0; i < word.length; i++) {
     answerArray[i] = "_ ";
 }
-
-document.write(answerArray);
 console.log("answer array", answerArray);
+document.getElementById('blanks').innerHTML += (answerArray);
+
 
 //var guess something on.keyup --> new guess
 document.onkeyup = function (event) {

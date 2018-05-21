@@ -1,10 +1,17 @@
-body {background-color: black
+body {
+    background-color: black;
+    line-height: 1.5;
 }
 
-div { border: solid;
+div {
+    border: solid;
     background-color: whitesmoke;
 }
 
 #header {
+    text-align: center;
+}
+
+#blanks {
     text-align: center;
 }
