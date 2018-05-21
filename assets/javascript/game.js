@@ -28,12 +28,19 @@ document.getElementById('blanks').innerHTML += (answerArray);
 
 
 //var guess something on.keyup --> new guess
+var lettersGuessed = [];
+lettersGuessed.push(
 document.onkeyup = function (event) {
     var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
-    console.log("guess", letterGuessed)
+    // console.log("guess", letterGuessed)
     //    updateGuesses(letterGuessed);
     //    checkWin();
-};
+    console.log("guess", lettersGuessed)
+});
+console.log("guess", lettersGuessed) //why doesn't this work?!?!?
+
+document.getElementById('lettersguessed').innerHTML = lettersGuessed;
+
 
 // document.write(letterGuessed); --> replaces the entire page here :(
 
