@@ -1,3 +1,10 @@
-div { border: solid;
+body {background-color: black
 }
 
+div { border: solid;
+    background-color: whitesmoke;
+}
+
+#header {
+    text-align: center;
+}
