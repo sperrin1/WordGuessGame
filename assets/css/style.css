@@ -5,11 +5,16 @@ body {
 
 div {
     border: solid;
-    background-color: whitesmoke;
 }
 
 #header {
     text-align: center;
+    background-color: whitesmoke;
+}
+
+#main {
+    margin: auto;
+    background-color: whitesmoke;
 }
 
 #blanks {
