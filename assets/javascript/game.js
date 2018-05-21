@@ -18,7 +18,7 @@ var words = [
 var word = words[Math.floor(Math.random() * words.length)];
 console.log("the random word is ", word);
 
-//Set up the answer array --> need this to go in #main-right
+//Set up the answer array --> need this to go in #main-right row 2
 var answerArray = [];
 for (var i = 0; i < word.length; i++) {
     answerArray[i] = "_ ";
@@ -27,19 +27,35 @@ console.log("answer array", answerArray);
 document.getElementById('blanks').innerHTML += (answerArray);
 
 
-//var guess something on.keyup --> new guess
-var lettersGuessed = [];
-lettersGuessed.push(
-document.onkeyup = function (event) {
-    var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
-    // console.log("guess", letterGuessed)
-    //    updateGuesses(letterGuessed);
-    //    checkWin();
-    console.log("guess", lettersGuessed)
-});
-console.log("guess", lettersGuessed) //why doesn't this work?!?!?
+//var guess something onkeyup --> new guess -->#main-right row 3
+//var lettersGuessed = [];
+// lettersGuessed.push(letterGuessed);
+// var letterGuessed = (
+    document.onkeyup = function (event) {
+        var letterGuessed = (String.fromCharCode(event.keyCode).toLowerCase())
+        // console.log("guess", letterGuessed);
+        //    updateGuesses(letterGuessed);
+        //    checkWin();
+        console.log("guess", letterGuessed);
+    };
+// console.log("guess", lettersGuessed) //why doesn't this work?!?!?
+// guess 
+// (1) [undefined]
+// 0
+// :
+// " "
+// 1
+// :
+// undefined
+// length
+// :
+// 2
+// __proto__
+// :
+// Array(0)
 
-document.getElementById('lettersguessed').innerHTML = lettersGuessed;
+// document.getElementById('lettersguessed').innerHTML += (lettersGuessed); //how the *@#% is lettersGuessed undefined here!!!!
+
 
 
 // document.write(letterGuessed); --> replaces the entire page here :(
@@ -57,29 +73,3 @@ var guessesArray = [];
 
 var remainingLetters = word.length;
 document.write(remainingLetters);
-
-
-
-// while (remainingLetters > 0) {
-//     // Show the player their progress
-//     alert(answerArray.join(" "));
-//     // Get a guess from the player
-//     if (guess === null) {
-//         // Exit the game loop
-//         break;
-//     } else if (guess.length !== 1) {
-//         alert("Please enter a single letter.");
-//     } else {
-//         // Update the game state with the guess
-//         for (var j = 0; j < word.length; j++) {
-//             if (word[j] === guess) {
-//                 answerArray[j] = guess;
-//                 remainingLetters--;
-//             }
-//         }
-//     }
-//     // The end of the game loop
-// }
-
-// alert(answerArray.join(" "));
-// alert("Good job! The answer was " + word);
