@@ -38,6 +38,8 @@ document.getElementById('blanks').innerHTML += (answerArray);
         //    checkWin();
         console.log("guess", letterGuessed);
     };
+// return maybe?
+
 // console.log("guess", lettersGuessed) //why doesn't this work?!?!?
 // guess 
 // (1) [undefined]
